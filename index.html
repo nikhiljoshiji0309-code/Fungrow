@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funngro | Smart Freelancing for Teens & Companies</title>
+    <meta name="description" content="Funngro connects talented teens with companies for real-world projects. Build your career early.">
+    <style>
+        :root {
+            --primary: #00d285; 
+            --dark: #1a1a2e;
+            --light: #f4f7f6;
+            --accent: #ff6b6b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+
+        nav button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-left: 10px;
+            transition: 0.3s;
+        }
+
+        nav button.alt { background: #333; }
+        nav button:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+
+        .hero {
+            padding: 80px 10%;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+
+        .container { padding: 60px 10%; }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--primary);
+        }
+
+        /* CONTACT SECTION */
+        .contact-section {
+            background: #fff;
+            padding: 60px 10%;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        .contact-card {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background: var(--light);
+            border-radius: 20px;
+        }
+
+        .btn-email {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-email:hover { background: #00b372; }
+
+        .hidden { display: none; }
+
+        footer { text-align: center; padding: 40px; background: #1a1a2e; color: #aaa; }
+        .seo-tag { display: inline-block; background: #e0f9f0; color: var(--primary); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; margin-bottom: 15px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Funngro Smart</div>
+    <nav>
+        <button onclick="togglePage('teen')">Teen Portal</button>
+        <button class="alt" onclick="togglePage('company')">Company Portal</button>
+    </nav>
+</header>
+
+<section id="teen-page">
+    <div class="hero">
+        <span class="seo-tag">Financial Independence for Gen-Z</span>
+        <h1>Real Work. Real Money.</h1>
+        <p>Earn, Learn, and grow with projects from top companies.</p>
+    </div>
+
+    <div class="container">
+        <h2>Why Join Funngro?</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Earn Money</h3>
+                <p>Complete projects in Graphic Design, Content, or Social Media and get paid instantly.</p>
+            </div>
+            <div class="card">
+                <h3>Verified Portfolio</h3>
+                <p>Build a digital resume that actually carries weight with future employers.</p>
+            </div>
+            <div class="card">
+                <h3>Flexible Gigs</h3>
+                <p>Work on your own schedule. Study first, earn later.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="company-page" class="hidden">
+    <div class="hero" style="background: linear-gradient(135deg, #00d285 0%, #008f5d 100%);">
+        <span class="seo-tag" style="background: white; color: var(--primary);">Smart Talent Sourcing</span>
+        <h1>Hire the Next Generation</h1>
+        <p>Scale your business with cost-effective, tech-native teen talent.</p>
+    </div>
+
+    <div class="container">
+        <h2>Corporate Benefits</h2>
+        <div class="card-grid">
+            <div class="card" style="border-top-color: #333;">
+                <h3>Digital Natives</h3>
+                <p>Get insights and content from the generation that lives on social media.</p>
+            </div>
+            <div class="card" style="border-top-color: #333;">
+                <h3>Efficiency</h3>
+                <p>Offload micro-tasks to enthusiastic learners and focus on your core strategy.</p>
+            </div>
+            <div class="card" style="border-top-color: #333;">
+                <h3>Social Impact</h3>
+                <p>Support youth financial literacy while getting professional work done.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-card">
+        <h2 id="contact-title">Ready to get started?</h2>
+        <p>Have questions about how Funngro Smart works? Drop us a message!</p>
+        <a href="mailto:nikhil.joshi.ji0309@gmail.com?subject=Inquiry%20from%20Funngro%20Smart%20Website" class="btn-email">
+            Contact: nikhil.joshi.ji0309@gmail.com
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Designed for Funngro Assessment by Nikhil Joshi</p>
+    <small>SEO Optimized | Responsive Design | Smart Layout</small>
+</footer>
+
+<script>
+    function togglePage(page) {
+        const teen = document.getElementById('teen-page');
+        const company = document.getElementById('company-page');
+        const contactTitle = document.getElementById('contact-title');
+
+        if(page === 'teen') {
+            teen.classList.remove('hidden');
+            company.classList.add('hidden');
+            contactTitle.innerText = "Teens, want to earn more?";
+        } else {
+            teen.classList.add('hidden');
+            company.classList.remove('hidden');
+            contactTitle.innerText = "Companies, want to hire smart?";
+        }
+        window.scrollTo(0,0);
+    }
+</script>
+
+</body>
+  </html>
+  
