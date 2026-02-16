@@ -1,213 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funngro | Smart Freelancing for Teens & Companies</title>
-    <meta name="description" content="Funngro connects talented teens with companies for real-world projects. Build your career early.">
-    <style>
-        :root {
-            --primary: #00d285; 
-            --dark: #1a1a2e;
-            --light: #f4f7f6;
-            --accent: #ff6b6b;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            background-color: var(--light);
-            color: var(--dark);
-            line-height: 1.6;
-        }
+<title>Funngro Smart | Paid Online Projects for Students & Gen-Z</title>
 
-        header {
-            background: white;
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+<meta name="description" content="Funngro Smart helps Gen-Z students earn money online through real freelance projects. Build skills, gain experience, and achieve financial independence.">
+<meta name="keywords" content="Paid online projects for students, Freelance work for teens, Gen-Z earning platform, Student freelance jobs, Work from home for students">
+<meta name="author" content="Nikhil Joshi">
 
-        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        nav button {
-            background: var(--primary);
-            color: white;
-            border: none;
-            padding: 10px 22px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-left: 10px;
-            transition: 0.3s;
-        }
+<style>
 
-        nav button.alt { background: #333; }
-        nav button:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-        .hero {
-            padding: 80px 10%;
-            text-align: center;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
-        }
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    line-height:1.7;
+}
 
-        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+header{
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    position:sticky;
+    top:0;
+}
 
-        .container { padding: 60px 10%; }
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#00ffd5;
+}
 
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
 
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            border-top: 5px solid var(--primary);
-        }
+nav a:hover{
+    color:#00ffd5;
+}
 
-        /* CONTACT SECTION */
-        .contact-section {
-            background: #fff;
-            padding: 60px 10%;
-            text-align: center;
-            border-top: 1px solid #ddd;
-        }
+.hero{
+    text-align:center;
+    padding:140px 20px;
+}
 
-        .contact-card {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 40px;
-            background: var(--light);
-            border-radius: 20px;
-        }
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
 
-        .btn-email {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 30px;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: 0.3s;
-        }
+.hero p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
 
-        .btn-email:hover { background: #00b372; }
+.btn{
+    padding:14px 30px;
+    background:#00ffd5;
+    color:black;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
 
-        .hidden { display: none; }
+.btn:hover{
+    background:white;
+}
 
-        footer { text-align: center; padding: 40px; background: #1a1a2e; color: #aaa; }
-        .seo-tag { display: inline-block; background: #e0f9f0; color: var(--primary); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; margin-bottom: 15px; font-weight: bold; }
-    </style>
+.section{
+    padding:90px 20px;
+    text-align:center;
+}
+
+.section h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.section p{
+    max-width:800px;
+    margin:auto;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    width:300px;
+    border-radius:18px;
+    transition:0.4s;
+    backdrop-filter: blur(10px);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(0,255,213,0.15);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:rgba(0,0,0,0.5);
+    margin-top:50px;
+}
+
+footer p{
+    font-size:14px;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+    .hero h1{
+        font-size:32px;
+    }
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
     <div class="logo">Funngro Smart</div>
     <nav>
-        <button onclick="togglePage('teen')">Teen Portal</button>
-        <button class="alt" onclick="togglePage('company')">Company Portal</button>
+        <a href="#about">About</a>
+        <a href="#students">For Students</a>
+        <a href="#companies">For Companies</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<section id="teen-page">
-    <div class="hero">
-        <span class="seo-tag">Financial Independence for Gen-Z</span>
-        <h1>Real Work. Real Money.</h1>
-        <p>Earn, Learn, and grow with projects from top companies.</p>
-    </div>
+<section class="hero">
+    <h1>Financial Independence for Gen-Z Students</h1>
+    <p>
+        Funngro Smart is a trusted platform that connects students with real paid online projects.
+        Gain practical experience, build your digital portfolio, and earn money while you study.
+    </p>
+    <a href="#students" class="btn">Start Earning Today</a>
+</section>
 
-    <div class="container">
-        <h2>Why Join Funngro?</h2>
-        <div class="card-grid">
-            <div class="card">
-                <h3>Earn Money</h3>
-                <p>Complete projects in Graphic Design, Content, or Social Media and get paid instantly.</p>
-            </div>
-            <div class="card">
-                <h3>Verified Portfolio</h3>
-                <p>Build a digital resume that actually carries weight with future employers.</p>
-            </div>
-            <div class="card">
-                <h3>Flexible Gigs</h3>
-                <p>Work on your own schedule. Study first, earn later.</p>
-            </div>
+<section id="about" class="section">
+    <h2>About Funngro Smart</h2>
+    <p>
+        Funngro Smart empowers students and young professionals by providing freelance work opportunities,
+        skill-building projects, and real-world experience. Our mission is to help Gen-Z achieve financial independence
+        while developing valuable career skills.
+    </p>
+</section>
+
+<section id="students" class="section">
+    <h2>Freelance Work Opportunities for Students</h2>
+    <p>
+        Explore flexible work-from-home projects designed for teenagers and college students.
+        Choose projects that match your interests and earn safely online.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>💼 Paid Online Projects</h3>
+            <p>Complete real assignments from companies and get paid for your skills.</p>
+        </div>
+
+        <div class="card">
+            <h3>📁 Build Professional Portfolio</h3>
+            <p>Create a verified digital profile to showcase your completed work.</p>
+        </div>
+
+        <div class="card">
+            <h3>⏰ Flexible Schedule</h3>
+            <p>Work anytime, anywhere — manage your studies and projects easily.</p>
         </div>
     </div>
 </section>
 
-<section id="company-page" class="hidden">
-    <div class="hero" style="background: linear-gradient(135deg, #00d285 0%, #008f5d 100%);">
-        <span class="seo-tag" style="background: white; color: var(--primary);">Smart Talent Sourcing</span>
-        <h1>Hire the Next Generation</h1>
-        <p>Scale your business with cost-effective, tech-native teen talent.</p>
-    </div>
+<section id="companies" class="section">
+    <h2>Hire Skilled Gen-Z Talent</h2>
+    <p>
+        Companies can access creative, tech-savvy students for micro-tasks, digital marketing,
+        content creation, and more. Save costs while supporting youth empowerment.
+    </p>
 
-    <div class="container">
-        <h2>Corporate Benefits</h2>
-        <div class="card-grid">
-            <div class="card" style="border-top-color: #333;">
-                <h3>Digital Natives</h3>
-                <p>Get insights and content from the generation that lives on social media.</p>
-            </div>
-            <div class="card" style="border-top-color: #333;">
-                <h3>Efficiency</h3>
-                <p>Offload micro-tasks to enthusiastic learners and focus on your core strategy.</p>
-            </div>
-            <div class="card" style="border-top-color: #333;">
-                <h3>Social Impact</h3>
-                <p>Support youth financial literacy while getting professional work done.</p>
-            </div>
+    <div class="cards">
+        <div class="card">
+            <h3>🚀 Affordable Talent</h3>
+            <p>Hire skilled young freelancers at competitive rates.</p>
+        </div>
+
+        <div class="card">
+            <h3>📈 Faster Growth</h3>
+            <p>Outsource tasks and scale your business efficiently.</p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Social Impact</h3>
+            <p>Support financial independence for the next generation.</p>
         </div>
     </div>
 </section>
 
-<section class="contact-section">
-    <div class="contact-card">
-        <h2 id="contact-title">Ready to get started?</h2>
-        <p>Have questions about how Funngro Smart works? Drop us a message!</p>
-        <a href="mailto:nikhil.joshi.ji0309@gmail.com?subject=Inquiry%20from%20Funngro%20Smart%20Website" class="btn-email">
-            Contact: nikhil.joshi.ji0309@gmail.com
-        </a>
-    </div>
+<section id="contact" class="section">
+    <h2>Contact Funngro Smart</h2>
+    <p>
+        Have questions? Want to collaborate?  
+        Email us at: <strong>nikhil.joshi.ji0309@gmail.com</strong>
+    </p>
 </section>
 
 <footer>
-    <p>&copy; 2026 Designed for Funngro Assessment by Nikhil Joshi</p>
-    <small>SEO Optimized | Responsive Design | Smart Layout</small>
+    <p>© 2026 Funngro Smart | Paid Online Projects for Students</p>
 </footer>
 
-<script>
-    function togglePage(page) {
-        const teen = document.getElementById('teen-page');
-        const company = document.getElementById('company-page');
-        const contactTitle = document.getElementById('contact-title');
-
-        if(page === 'teen') {
-            teen.classList.remove('hidden');
-            company.classList.add('hidden');
-            contactTitle.innerText = "Teens, want to earn more?";
-        } else {
-            teen.classList.add('hidden');
-            company.classList.remove('hidden');
-            contactTitle.innerText = "Companies, want to hire smart?";
-        }
-        window.scrollTo(0,0);
-    }
-</script>
-
 </body>
-  </html>
-  
+</html>
